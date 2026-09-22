@@ -1,27 +1,14 @@
-```html id="m8q2az"
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>QuickTools - 45 Free Online Tools</title>
-
-<meta name="description"
-content="Free online calculators, converters, text tools and everyday utilities.">
+<title>QuickTools - Free Online Calculators</title>
 
 <style>
-
 * {
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -35,88 +22,65 @@ header {
     background: #111;
     color: white;
     text-align: center;
-    padding: 55px 20px;
+    padding: 45px 20px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 44px;
+    font-size: 42px;
 }
 
 header p {
     color: #ccc;
-    font-size: 18px;
 }
 
 .container {
     max-width: 1100px;
     margin: auto;
-    padding: 25px 20px;
+    padding: 25px;
 }
 
 .menu {
     background: white;
-    padding: 25px;
-    border-radius: 14px;
-    margin-bottom: 30px;
-    box-shadow: 0 2px 10px rgba(0,0,0,.07);
-}
-
-.menu h2 {
-    margin-top: 0;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
 }
 
 .menu a {
     display: inline-block;
-    text-decoration: none;
-    color: #111;
     background: #eee;
+    color: #111;
+    text-decoration: none;
     padding: 10px 14px;
     margin: 5px;
     border-radius: 8px;
-    font-size: 14px;
-}
-
-.menu a:hover {
-    background: #ddd;
 }
 
 .category {
-    margin-top: 40px;
-}
-
-.category h2 {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
+    margin-top: 35px;
 }
 
 .tools {
     display: grid;
-    grid-template-columns:
-        repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
 .tool {
     background: white;
-    border-radius: 14px;
-    padding: 25px;
-    box-shadow: 0 2px 10px rgba(0,0,0,.07);
-}
-
-.tool-number {
-    font-size: 13px;
-    color: #777;
-    font-weight: bold;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .tool h3 {
-    margin-bottom: 8px;
+    margin-top: 5px;
 }
 
-.tool input,
-.tool select,
-.tool textarea {
+input,
+select,
+textarea {
     width: 100%;
     padding: 11px;
     margin: 6px 0;
@@ -125,31 +89,29 @@ header p {
     font-size: 15px;
 }
 
-.tool button {
+button {
     width: 100%;
-    padding: 12px;
+    padding: 11px;
     margin-top: 8px;
-    border: none;
-    border-radius: 8px;
     background: #111;
     color: white;
+    border: none;
+    border-radius: 7px;
     cursor: pointer;
-    font-size: 15px;
 }
 
-.tool button:hover {
+button:hover {
     background: #333;
 }
 
 .result {
-    margin-top: 15px;
+    margin-top: 12px;
     font-weight: bold;
     line-height: 1.6;
 }
 
 .coming {
     color: #777;
-    font-size: 14px;
 }
 
 footer {
@@ -159,7 +121,6 @@ footer {
 }
 
 @media(max-width:600px) {
-
     header h1 {
         font-size: 34px;
     }
@@ -167,55 +128,32 @@ footer {
     .container {
         padding: 15px;
     }
-
-    .tools {
-        grid-template-columns: 1fr;
-    }
-
 }
-
 </style>
-
 </head>
-
 
 <body>
 
-
 <header>
-
-<h1>QuickTools</h1>
-
-<p>45 Free Online Tools for Everyday Tasks</p>
-
+    <h1>QuickTools</h1>
+    <p>Free Online Calculators & Tools</p>
 </header>
-
 
 <div class="container">
 
-
-<!-- MENU -->
-
 <div class="menu">
+    <h2>📋 Tool Menu</h2>
 
-<h2>📋 All Tools</h2>
-
-<a href="#math">🧮 Math & Numbers</a>
-
-<a href="#finance">💰 Finance</a>
-
-<a href="#date">📅 Date & Time</a>
-
-<a href="#convert">📏 Converters</a>
-
-<a href="#text">📝 Text & Productivity</a>
-
-<a href="#everyday">❤️ Everyday</a>
-
+    <a href="#math">🧮 Math</a>
+    <a href="#finance">💰 Finance</a>
+    <a href="#date">📅 Date & Time</a>
+    <a href="#convert">📏 Converters</a>
+    <a href="#text">📝 Text</a>
+    <a href="#everyday">❤️ Everyday</a>
 </div>
 
 
-<!-- ================= MATH ================= -->
+<!-- MATH -->
 
 <section class="category" id="math">
 
@@ -223,233 +161,146 @@ footer {
 
 <div class="tools">
 
-
-<div class="tool" id="tool1">
-
-<div class="tool-number">#1</div>
-
-<h3>Age Calculator</h3>
-
-<p>Calculate your age from your date of birth.</p>
+<div class="tool">
+<h3>#1 Age Calculator</h3>
 
 <input type="date" id="birthDate">
 
-<button onclick="calculateAge()">
-Calculate Age
-</button>
+<button onclick="calculateAge()">Calculate Age</button>
 
 <div class="result" id="ageResult"></div>
-
 </div>
 
 
 <div class="tool">
+<h3>#2 Percentage Calculator</h3>
 
-<div class="tool-number">#2</div>
+<input type="number" id="percent" placeholder="Percentage">
 
-<h3>Percentage Calculator</h3>
+<input type="number" id="percentNumber" placeholder="Number">
 
-<input type="number" id="percent"
-placeholder="Percentage">
-
-<input type="number" id="percentNumber"
-placeholder="Number">
-
-<button onclick="percentage()">
-Calculate
-</button>
+<button onclick="calculatePercentage()">Calculate</button>
 
 <div class="result" id="percentageResult"></div>
-
 </div>
 
 
 <div class="tool">
-
-<div class="tool-number">#3</div>
-
-<h3>Average Calculator</h3>
+<h3>#3 Average Calculator</h3>
 
 <input type="text" id="averageNumbers"
 placeholder="Example: 10, 20, 30">
 
-<button onclick="average()">
-Calculate Average
-</button>
+<button onclick="calculateAverage()">Calculate</button>
 
 <div class="result" id="averageResult"></div>
-
 </div>
 
 
 <div class="tool">
+<h3>#4 Ratio Calculator</h3>
 
-<div class="tool-number">#4</div>
+<input type="number" id="ratioA" placeholder="First number">
 
-<h3>Ratio Calculator</h3>
+<input type="number" id="ratioB" placeholder="Second number">
 
-<input type="number" id="ratioA"
-placeholder="First number">
-
-<input type="number" id="ratioB"
-placeholder="Second number">
-
-<button onclick="ratio()">
-Calculate Ratio
-</button>
+<button onclick="calculateRatio()">Calculate</button>
 
 <div class="result" id="ratioResult"></div>
-
 </div>
 
 
 <div class="tool">
+<h3>#5 Fraction Calculator</h3>
 
-<div class="tool-number">#5</div>
+<input type="number" id="fractionA" placeholder="Numerator 1">
 
-<h3>Fraction Calculator</h3>
+<input type="number" id="fractionB" placeholder="Denominator 1">
 
-<input type="number" id="f1"
-placeholder="Numerator 1">
+<input type="number" id="fractionC" placeholder="Numerator 2">
 
-<input type="number" id="f2"
-placeholder="Denominator 1">
+<input type="number" id="fractionD" placeholder="Denominator 2">
 
-<input type="number" id="f3"
-placeholder="Numerator 2">
-
-<input type="number" id="f4"
-placeholder="Denominator 2">
-
-<button onclick="fraction()">
-Add Fractions
-</button>
+<button onclick="calculateFraction()">Add Fractions</button>
 
 <div class="result" id="fractionResult"></div>
-
 </div>
 
 
 <div class="tool">
+<h3>#6 Discount Calculator</h3>
 
-<div class="tool-number">#6</div>
+<input type="number" id="originalPrice" placeholder="Original price">
 
-<h3>Discount Calculator</h3>
+<input type="number" id="discountPercent" placeholder="Discount %">
 
-<input type="number" id="price"
-placeholder="Original price">
-
-<input type="number" id="discount"
-placeholder="Discount %">
-
-<button onclick="discountCalc()">
-Calculate
-</button>
+<button onclick="calculateDiscount()">Calculate</button>
 
 <div class="result" id="discountResult"></div>
-
 </div>
 
 
 <div class="tool">
+<h3>#7 Profit & Loss Calculator</h3>
 
-<div class="tool-number">#7</div>
+<input type="number" id="costPrice" placeholder="Cost price">
 
-<h3>Profit & Loss</h3>
+<input type="number" id="sellingPrice" placeholder="Selling price">
 
-<input type="number" id="cost"
-placeholder="Cost price">
+<button onclick="calculateProfitLoss()">Calculate</button>
 
-<input type="number" id="selling"
-placeholder="Selling price">
-
-<button onclick="profitLoss()">
-Calculate
-</button>
-
-<div class="result" id="profitResult"></div>
-
+<div class="result" id="profitLossResult"></div>
 </div>
 
 
 <div class="tool">
+<h3>#8 GST Calculator</h3>
 
-<div class="tool-number">#8</div>
-
-<h3>GST Calculator</h3>
-
-<input type="number" id="gstAmount"
-placeholder="Amount ₹">
+<input type="number" id="gstAmount" placeholder="Amount ₹">
 
 <select id="gstRate">
-
-<option value="5">5% GST</option>
-
-<option value="12">12% GST</option>
-
-<option value="18" selected>18% GST</option>
-
-<option value="28">28% GST</option>
-
+<option value="5">5%</option>
+<option value="12">12%</option>
+<option value="18" selected>18%</option>
+<option value="28">28%</option>
 </select>
 
-<button onclick="gst()">
-Calculate GST
-</button>
+<button onclick="calculateGST()">Calculate GST</button>
 
 <div class="result" id="gstResult"></div>
-
 </div>
 
 
 <div class="tool">
+<h3>#9 Tip Calculator</h3>
 
-<div class="tool-number">#9</div>
+<input type="number" id="billAmount" placeholder="Bill amount">
 
-<h3>Tip Calculator</h3>
+<input type="number" id="tipPercent" placeholder="Tip %">
 
-<input type="number" id="bill"
-placeholder="Bill amount">
-
-<input type="number" id="tip"
-placeholder="Tip %">
-
-<button onclick="tipCalc()">
-Calculate
-</button>
+<button onclick="calculateTip()">Calculate</button>
 
 <div class="result" id="tipResult"></div>
-
 </div>
 
 
 <div class="tool">
+<h3>#10 Random Number Generator</h3>
 
-<div class="tool-number">#10</div>
+<input type="number" id="randomMin" placeholder="Minimum">
 
-<h3>Number Generator</h3>
+<input type="number" id="randomMax" placeholder="Maximum">
 
-<input type="number" id="minNumber"
-placeholder="Minimum">
-
-<input type="number" id="maxNumber"
-placeholder="Maximum">
-
-<button onclick="randomNumber()">
-Generate
-</button>
+<button onclick="generateRandom()">Generate</button>
 
 <div class="result" id="randomResult"></div>
-
 </div>
 
-
 </div>
-
 </section>
 
 
-<!-- ================= FINANCE ================= -->
+<!-- FINANCE -->
 
 <section class="category" id="finance">
 
@@ -457,28 +308,120 @@ Generate
 
 <div class="tools">
 
-<div class="tool"><div class="tool-number">#11</div><h3>EMI Calculator</h3><p>Calculate monthly loan payments.</p><span class="coming">Coming next</span></div>
+<div class="tool">
+<h3>#11 EMI Calculator</h3>
 
-<div class="tool"><div class="tool-number">#12</div><h3>Simple Interest</h3><p>Calculate simple interest.</p><span class="coming">Coming next</span></div>
+<input type="number" id="loanAmount" placeholder="Loan amount">
 
-<div class="tool"><div class="tool-number">#13</div><h3>Compound Interest</h3><p>Calculate compound interest.</p><span class="coming">Coming next</span></div>
+<input type="number" id="interestRate" placeholder="Annual interest %">
 
-<div class="tool"><div class="tool-number">#14</div><h3>Loan Calculator</h3><p>Estimate loan payments.</p><span class="coming">Coming next</span></div>
+<input type="number" id="loanYears" placeholder="Loan years">
 
-<div class="tool"><div class="tool-number">#15</div><h3>Salary Calculator</h3><p>Calculate salary amounts.</p><span class="coming">Coming next</span></div>
+<button onclick="calculateEMI()">Calculate EMI</button>
 
-<div class="tool"><div class="tool-number">#16</div><h3>Investment Return</h3><p>Estimate investment returns.</p><span class="coming">Coming next</span></div>
-
-<div class="tool"><div class="tool-number">#17</div><h3>Savings Calculator</h3><p>Plan your savings.</p><span class="coming">Coming next</span></div>
-
-<div class="tool"><div class="tool-number">#18</div><h3>Currency Converter</h3><p>Convert between currencies.</p><span class="coming">Coming next</span></div>
-
+<div class="result" id="emiResult"></div>
 </div>
 
+
+<div class="tool">
+<h3>#12 Simple Interest</h3>
+
+<input type="number" id="siPrincipal" placeholder="Principal">
+
+<input type="number" id="siRate" placeholder="Rate %">
+
+<input type="number" id="siTime" placeholder="Time in years">
+
+<button onclick="calculateSI()">Calculate</button>
+
+<div class="result" id="siResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#13 Compound Interest</h3>
+
+<input type="number" id="ciPrincipal" placeholder="Principal">
+
+<input type="number" id="ciRate" placeholder="Rate %">
+
+<input type="number" id="ciTime" placeholder="Years">
+
+<button onclick="calculateCI()">Calculate</button>
+
+<div class="result" id="ciResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#14 Loan Calculator</h3>
+
+<input type="number" id="loanAmount2" placeholder="Loan amount">
+
+<input type="number" id="loanRate2" placeholder="Annual interest %">
+
+<input type="number" id="loanYears2" placeholder="Years">
+
+<button onclick="calculateLoan()">Calculate</button>
+
+<div class="result" id="loanResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#15 Salary Calculator</h3>
+
+<input type="number" id="monthlySalary" placeholder="Monthly salary">
+
+<button onclick="calculateSalary()">Calculate</button>
+
+<div class="result" id="salaryResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#16 Investment Return</h3>
+
+<input type="number" id="investment" placeholder="Investment">
+
+<input type="number" id="returnRate" placeholder="Return %">
+
+<button onclick="calculateReturn()">Calculate</button>
+
+<div class="result" id="returnResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#17 Savings Calculator</h3>
+
+<input type="number" id="monthlySaving" placeholder="Monthly saving">
+
+<input type="number" id="savingMonths" placeholder="Number of months">
+
+<button onclick="calculateSavings()">Calculate</button>
+
+<div class="result" id="savingResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#18 Currency Converter</h3>
+
+<input type="number" id="rupees" placeholder="Amount in ₹">
+
+<button onclick="convertCurrency()">Convert to USD*</button>
+
+<div class="result" id="currencyResult"></div>
+
+<small>*Example fixed rate for now.</small>
+</div>
+
+</div>
 </section>
 
 
-<!-- ================= DATE ================= -->
+<!-- DATE -->
 
 <section class="category" id="date">
 
@@ -486,24 +429,84 @@ Generate
 
 <div class="tools">
 
-<div class="tool"><div class="tool-number">#19</div><h3>Date Difference</h3><span class="coming">Coming next</span></div>
+<div class="tool">
+<h3>#19 Date Difference</h3>
 
-<div class="tool"><div class="tool-number">#20</div><h3>Days Between Dates</h3><span class="coming">Coming next</span></div>
+<input type="date" id="date1">
 
-<div class="tool"><div class="tool-number">#21</div><h3>Countdown Calculator</h3><span class="coming">Coming next</span></div>
+<input type="date" id="date2">
 
-<div class="tool"><div class="tool-number">#22</div><h3>Time Duration</h3><span class="coming">Coming next</span></div>
+<button onclick="dateDifference()">Calculate</button>
 
-<div class="tool"><div class="tool-number">#23</div><h3>Add / Subtract Days</h3><span class="coming">Coming next</span></div>
-
-<div class="tool"><div class="tool-number">#24</div><h3>Week Number</h3><span class="coming">Coming next</span></div>
-
+<div class="result" id="dateResult"></div>
 </div>
 
+
+<div class="tool">
+<h3>#20 Days Between Dates</h3>
+
+<input type="date" id="daysDate1">
+
+<input type="date" id="daysDate2">
+
+<button onclick="daysBetween()">Calculate</button>
+
+<div class="result" id="daysResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#21 Countdown</h3>
+
+<input type="date" id="countdownDate">
+
+<button onclick="countdown()">Calculate</button>
+
+<div class="result" id="countdownResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#22 Time Duration</h3>
+
+<input type="time" id="timeStart">
+
+<input type="time" id="timeEnd">
+
+<button onclick="timeDuration()">Calculate</button>
+
+<div class="result" id="timeResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#23 Add Days</h3>
+
+<input type="date" id="addDate">
+
+<input type="number" id="numberOfDays" placeholder="Days">
+
+<button onclick="addDays()">Calculate</button>
+
+<div class="result" id="addDaysResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#24 Week Number</h3>
+
+<input type="date" id="weekDate">
+
+<button onclick="weekNumber()">Calculate</button>
+
+<div class="result" id="weekResult"></div>
+</div>
+
+</div>
 </section>
 
 
-<!-- ================= CONVERTERS ================= -->
+<!-- CONVERTERS -->
 
 <section class="category" id="convert">
 
@@ -511,28 +514,98 @@ Generate
 
 <div class="tools">
 
-<div class="tool"><div class="tool-number">#25</div><h3>Length Converter</h3><span class="coming">Coming next</span></div>
+<div class="tool">
+<h3>#25 Length Converter</h3>
 
-<div class="tool"><div class="tool-number">#26</div><h3>Weight Converter</h3><span class="coming">Coming next</span></div>
+<input type="number" id="km" placeholder="Kilometres">
 
-<div class="tool"><div class="tool-number">#27</div><h3>Temperature Converter</h3><span class="coming">Coming next</span></div>
+<button onclick="convertLength()">Convert</button>
 
-<div class="tool"><div class="tool-number">#28</div><h3>Speed Converter</h3><span class="coming">Coming next</span></div>
-
-<div class="tool"><div class="tool-number">#29</div><h3>Area Converter</h3><span class="coming">Coming next</span></div>
-
-<div class="tool"><div class="tool-number">#30</div><h3>Volume Converter</h3><span class="coming">Coming next</span></div>
-
-<div class="tool"><div class="tool-number">#31</div><h3>Data Storage Converter</h3><span class="coming">Coming next</span></div>
-
-<div class="tool"><div class="tool-number">#32</div><h3>Time Converter</h3><span class="coming">Coming next</span></div>
-
+<div class="result" id="lengthResult"></div>
 </div>
 
+
+<div class="tool">
+<h3>#26 Weight Converter</h3>
+
+<input type="number" id="kg" placeholder="Kilograms">
+
+<button onclick="convertWeight()">Convert</button>
+
+<div class="result" id="weightResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#27 Temperature Converter</h3>
+
+<input type="number" id="celsius" placeholder="Celsius">
+
+<button onclick="convertTemperature()">Convert</button>
+
+<div class="result" id="temperatureResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#28 Speed Converter</h3>
+
+<input type="number" id="kmh" placeholder="km/h">
+
+<button onclick="convertSpeed()">Convert</button>
+
+<div class="result" id="speedResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#29 Area Converter</h3>
+
+<input type="number" id="squareMeter" placeholder="Square metres">
+
+<button onclick="convertArea()">Convert</button>
+
+<div class="result" id="areaResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#30 Volume Converter</h3>
+
+<input type="number" id="litres" placeholder="Litres">
+
+<button onclick="convertVolume()">Convert</button>
+
+<div class="result" id="volumeResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#31 Data Storage Converter</h3>
+
+<input type="number" id="gb" placeholder="GB">
+
+<button onclick="convertData()">Convert</button>
+
+<div class="result" id="dataResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#32 Time Converter</h3>
+
+<input type="number" id="hours" placeholder="Hours">
+
+<button onclick="convertTime()">Convert</button>
+
+<div class="result" id="timeConvertResult"></div>
+</div>
+
+</div>
 </section>
 
 
-<!-- ================= TEXT ================= -->
+<!-- TEXT -->
 
 <section class="category" id="text">
 
@@ -540,232 +613,847 @@ Generate
 
 <div class="tools">
 
-<div class="tool"><div class="tool-number">#33</div><h3>Word Counter</h3><textarea id="wordText" rows="4" placeholder="Type or paste text"></textarea><button onclick="wordCounter()">Count</button><div class="result" id="wordResult"></div></div>
+<div class="tool">
+<h3>#33 Word Counter</h3>
 
-<div class="tool"><div class="tool-number">#34</div><h3>Character Counter</h3><textarea id="characterText" rows="4" placeholder="Type or paste text"></textarea><button onclick="characterCounter()">Count</button><div class="result" id="characterResult"></div></div>
+<textarea id="wordText" rows="4"
+placeholder="Enter text"></textarea>
 
-<div class="tool"><div class="tool-number">#35</div><h3>Sentence Counter</h3><textarea id="sentenceText" rows="4" placeholder="Type or paste text"></textarea><button onclick="sentenceCounter()">Count</button><div class="result" id="sentenceResult"></div></div>
+<button onclick="countWords()">Count Words</button>
 
-<div class="tool"><div class="tool-number">#36</div><h3>Case Converter</h3><textarea id="caseText" rows="4" placeholder="Type text"></textarea><button onclick="upperCase()">UPPERCASE</button><button onclick="lowerCase()">lowercase</button><div class="result" id="caseResult"></div></div>
-
-<div class="tool"><div class="tool-number">#37</div><h3>Reading Time</h3><textarea id="readingText" rows="4" placeholder="Paste your text"></textarea><button onclick="readingTime()">Calculate</button><div class="result" id="readingResult"></div></div>
-
-<div class="tool"><div class="tool-number">#38</div><h3>Text-to-Number Counter</h3><textarea id="textNumber" rows="4" placeholder="Type or paste text"></textarea><button onclick="textNumberCounter()">Count</button><div class="result" id="textNumberResult"></div></div>
-
-<div class="tool"><div class="tool-number">#39</div><h3>Password Generator</h3><button onclick="passwordGenerator()">Generate Password</button><div class="result" id="passwordResult"></div></div>
-
-<div class="tool"><div class="tool-number">#40</div><h3>Random Number Generator</h3><button onclick="randomSimple()">Generate</button><div class="result" id="randomSimpleResult"></div></div>
-
+<div class="result" id="wordResult"></div>
 </div>
 
+
+<div class="tool">
+<h3>#34 Character Counter</h3>
+
+<textarea id="characterText" rows="4"
+placeholder="Enter text"></textarea>
+
+<button onclick="countCharacters()">Count</button>
+
+<div class="result" id="characterResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#35 Sentence Counter</h3>
+
+<textarea id="sentenceText" rows="4"
+placeholder="Enter text"></textarea>
+
+<button onclick="countSentences()">Count</button>
+
+<div class="result" id="sentenceResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#36 Case Converter</h3>
+
+<textarea id="caseText" rows="4"
+placeholder="Enter text"></textarea>
+
+<button onclick="toUpper()">UPPERCASE</button>
+
+<button onclick="toLower()">lowercase</button>
+
+<div class="result" id="caseResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#37 Reading Time</h3>
+
+<textarea id="readingText" rows="4"
+placeholder="Enter text"></textarea>
+
+<button onclick="readingTime()">Calculate</button>
+
+<div class="result" id="readingResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#38 Number Counter</h3>
+
+<textarea id="numberText" rows="4"
+placeholder="Example: I have 10 apples and 20 oranges"></textarea>
+
+<button onclick="countNumbers()">Count Numbers</button>
+
+<div class="result" id="numberResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#39 Password Generator</h3>
+
+<button onclick="generatePassword()">Generate Password</button>
+
+<div class="result" id="passwordResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#40 Random Number</h3>
+
+<button onclick="simpleRandom()">Generate 1–100</button>
+
+<div class="result" id="simpleRandomResult"></div>
+</div>
+
+</div>
 </section>
 
 
-<!-- ================= EVERYDAY ================= -->
+<!-- EVERYDAY -->
 
 <section class="category" id="everyday">
 
-<h2>❤️ Everyday Tools</h2>
+<h2>❤️ Everyday</h2>
 
 <div class="tools">
 
-<div class="tool"><div class="tool-number">#41</div><h3>BMI Calculator</h3><span class="coming">Coming next</span></div>
+<div class="tool">
+<h3>#41 BMI Calculator</h3>
 
-<div class="tool"><div class="tool-number">#42</div><h3>Calorie Calculator</h3><span class="coming">Coming next</span></div>
+<input type="number" id="height" placeholder="Height in metres">
 
-<div class="tool"><div class="tool-number">#43</div><h3>Pace Calculator</h3><span class="coming">Coming next</span></div>
+<input type="number" id="weight" placeholder="Weight in kg">
 
-<div class="tool"><div class="tool-number">#44</div><h3>Water Intake Calculator</h3><span class="coming">Coming next</span></div>
+<button onclick="calculateBMI()">Calculate</button>
 
-<div class="tool"><div class="tool-number">#45</div><h3>Body Fat Calculator</h3><span class="coming">Coming next</span></div>
-
+<div class="result" id="bmiResult"></div>
 </div>
 
-</section>
 
+<div class="tool">
+<h3>#42 Calorie Calculator</h3>
+
+<input type="number" id="calorieWeight" placeholder="Weight in kg">
+
+<button onclick="calculateCalories()">Estimate</button>
+
+<div class="result" id="calorieResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#43 Pace Calculator</h3>
+
+<input type="number" id="distance" placeholder="Distance in km">
+
+<input type="number" id="minutes" placeholder="Minutes">
+
+<button onclick="calculatePace()">Calculate</button>
+
+<div class="result" id="paceResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#44 Water Intake</h3>
+
+<input type="number" id="waterWeight" placeholder="Weight in kg">
+
+<button onclick="calculateWater()">Estimate</button>
+
+<div class="result" id="waterResult"></div>
+</div>
+
+
+<div class="tool">
+<h3>#45 Body Fat Calculator</h3>
+
+<input type="number" id="bodyWeight" placeholder="Weight in kg">
+
+<input type="number" id="bodyHeight" placeholder="Height in cm">
+
+<button onclick="calculateBodyFat()">Estimate</button>
+
+<div class="result" id="bodyFatResult"></div>
+</div>
+
+</div>
+</section>
 
 </div>
 
 
 <footer>
-
 © 2026 QuickTools
-
 </footer>
 
 
 <script>
 
-
 function calculateAge() {
 
-    const value =
-        document.getElementById("birthDate").value;
+    const value = document.getElementById("birthDate").value;
 
     if (!value) {
-
         document.getElementById("ageResult").innerText =
-            "Please enter your birth date.";
-
+            "Please select your birth date.";
         return;
     }
 
-    const birth =
-        new Date(value + "T00:00:00");
-
+    const birth = new Date(value + "T00:00:00");
     const today = new Date();
 
-    let age =
-        today.getFullYear() -
-        birth.getFullYear();
+    let age = today.getFullYear() - birth.getFullYear();
 
-    if (
-        today.getMonth() < birth.getMonth() ||
+    const birthdayPassed =
+        today.getMonth() > birth.getMonth() ||
         (
             today.getMonth() === birth.getMonth() &&
-            today.getDate() < birth.getDate()
-        )
-    ) {
-        age--;
-    }
+            today.getDate() >= birth.getDate()
+        );
+
+    if (!birthdayPassed) age--;
 
     document.getElementById("ageResult").innerText =
-        "Your age is " + age + " years.";
+        "Age: " + age + " years";
 }
 
 
-function percentage() {
+function calculatePercentage() {
 
-    const p =
-        Number(document.getElementById("percent").value);
-
-    const n =
-        Number(document.getElementById("percentNumber").value);
-
-    if (!Number.isFinite(p) || !Number.isFinite(n)) {
-
-        document.getElementById("percentageResult").innerText =
-            "Enter both values.";
-
-        return;
-    }
+    const p = Number(document.getElementById("percent").value);
+    const n = Number(document.getElementById("percentNumber").value);
 
     document.getElementById("percentageResult").innerText =
-        p + "% of " + n + " = " + ((p / 100) * n);
+        isNaN(p) || isNaN(n)
+        ? "Enter both values."
+        : p + "% of " + n + " = " + (p * n / 100);
 }
 
 
-function average() {
+function calculateAverage() {
 
     const values =
         document.getElementById("averageNumbers")
         .value
         .split(",")
         .map(Number)
-        .filter(Number.isFinite);
+        .filter(x => !isNaN(x));
 
-    if (values.length === 0) {
-
+    if (!values.length) {
         document.getElementById("averageResult").innerText =
             "Enter numbers separated by commas.";
-
         return;
     }
 
-    const total =
-        values.reduce((a,b) => a + b, 0);
+    const total = values.reduce((a,b) => a+b, 0);
 
     document.getElementById("averageResult").innerText =
         "Average = " + (total / values.length);
 }
 
 
-function ratio() {
+function calculateRatio() {
 
-    const a =
-        Number(document.getElementById("ratioA").value);
+    const a = Number(document.getElementById("ratioA").value);
+    const b = Number(document.getElementById("ratioB").value);
 
-    const b =
-        Number(document.getElementById("ratioB").value);
-
-    if (!Number.isFinite(a) || !Number.isFinite(b) || b === 0) {
-
+    if (b === 0 || isNaN(a) || isNaN(b)) {
         document.getElementById("ratioResult").innerText =
             "Enter valid numbers.";
-
         return;
     }
 
+    function gcd(x,y) {
+        while(y) {
+            let temp = y;
+            y = x % y;
+            x = temp;
+        }
+        return Math.abs(x);
+    }
+
+    const divisor = gcd(a,b);
+
     document.getElementById("ratioResult").innerText =
-        "Ratio = " + a + " : " + b;
+        "Simplified ratio = " +
+        (a/divisor) + " : " + (b/divisor);
 }
 
 
-function fraction() {
+function calculateFraction() {
 
-    const a = Number(document.getElementById("f1").value);
-    const b = Number(document.getElementById("f2").value);
-    const c = Number(document.getElementById("f3").value);
-    const d = Number(document.getElementById("f4").value);
+    const a = Number(document.getElementById("fractionA").value);
+    const b = Number(document.getElementById("fractionB").value);
+    const c = Number(document.getElementById("fractionC").value);
+    const d = Number(document.getElementById("fractionD").value);
 
     if (b === 0 || d === 0) {
-
         document.getElementById("fractionResult").innerText =
-            "Denominators cannot be zero.";
-
+            "Denominator cannot be zero.";
         return;
     }
 
-    const numerator =
-        a * d + c * b;
-
-    const denominator =
-        b * d;
+    const numerator = a*d + c*b;
+    const denominator = b*d;
 
     document.getElementById("fractionResult").innerText =
         "Result = " + numerator + "/" + denominator;
 }
 
 
-function discountCalc() {
+function calculateDiscount() {
 
-    const price =
-        Number(document.getElementById("price").value);
+    const price = Number(document.getElementById("originalPrice").value);
+    const discount = Number(document.getElementById("discountPercent").value);
 
-    const discount =
-        Number(document.getElementById("discount").value);
-
-    if (price < 0 || discount < 0) {
-
-        document.getElementById("discountResult").innerText =
-            "Enter valid values.";
-
-        return;
-    }
-
-    const saved =
-        price * discount / 100;
-
-    const finalPrice =
-        price - saved;
+    const saved = price * discount / 100;
+    const finalPrice = price - saved;
 
     document.getElementById("discountResult").innerText =
-        "You save ₹" +
-        saved.toFixed(2) +
-        " | Final price ₹" +
-        finalPrice.toFixed(2);
+        "You save ₹" + saved.toFixed(2) +
+        " | Final price ₹" + finalPrice.toFixed(2);
 }
 
 
-function profitLoss() {
+function calculateProfitLoss() {
 
-    const cost =
-        Number(document.getElementById("cost").value);
+    const cost = Number(document.getElementById("costPrice").value);
+    const selling = Number(document.getElementById("sellingPrice").value);
 
-    const selling =
-        Number(document.getElementById("selling").value);
+    if (selling > cost) {
+        document.getElementById("profitLossResult").innerText =
+            "Profit = ₹" + (selling-cost).toFixed(2);
+    }
+    else if (selling < cost) {
+        document.getElementById("profitLossResult").innerText =
+            "Loss = ₹" + (cost-selling).toFixed(2);
+    }
+    else {
+        document.getElementById("profitLossResult").innerText =
+            "No profit or loss.";
+    }
+}
 
-    if (cost <= 0 || selling < 0) {
 
-        document.getElementById("profitResult").inner
-```
+function calculateGST() {
+
+    const amount = Number(document.getElementById("gstAmount").value);
+    const rate = Number(document.getElementById("gstRate").value);
+
+    const tax = amount * rate / 100;
+
+    document.getElementById("gstResult").innerHTML =
+        "GST = ₹" + tax.toFixed(2) +
+        "<br>Total = ₹" + (amount+tax).toFixed(2);
+}
+
+
+function calculateTip() {
+
+    const bill = Number(document.getElementById("billAmount").value);
+    const tip = Number(document.getElementById("tipPercent").value);
+
+    const tipAmount = bill * tip / 100;
+
+    document.getElementById("tipResult").innerText =
+        "Tip = ₹" + tipAmount.toFixed(2) +
+        " | Total = ₹" + (bill+tipAmount).toFixed(2);
+}
+
+
+function generateRandom() {
+
+    const min = Number(document.getElementById("randomMin").value);
+    const max = Number(document.getElementById("randomMax").value);
+
+    if (min > max) {
+        document.getElementById("randomResult").innerText =
+            "Minimum must be smaller.";
+        return;
+    }
+
+    const result =
+        Math.floor(Math.random() * (max-min+1)) + min;
+
+    document.getElementById("randomResult").innerText =
+        "Random number = " + result;
+}
+
+
+function calculateEMI() {
+
+    const P = Number(document.getElementById("loanAmount").value);
+    const annual = Number(document.getElementById("interestRate").value);
+    const years = Number(document.getElementById("loanYears").value);
+
+    const r = annual / 12 / 100;
+    const n = years * 12;
+
+    if (r === 0) {
+        document.getElementById("emiResult").innerText =
+            "Monthly EMI = ₹" + (P/n).toFixed(2);
+        return;
+    }
+
+    const emi =
+        P*r*Math.pow(1+r,n) /
+        (Math.pow(1+r,n)-1);
+
+    document.getElementById("emiResult").innerText =
+        "Monthly EMI = ₹" + emi.toFixed(2);
+}
+
+
+function calculateSI() {
+
+    const P = Number(document.getElementById("siPrincipal").value);
+    const R = Number(document.getElementById("siRate").value);
+    const T = Number(document.getElementById("siTime").value);
+
+    const SI = P*R*T/100;
+
+    document.getElementById("siResult").innerText =
+        "Simple Interest = ₹" + SI.toFixed(2) +
+        " | Amount = ₹" + (P+SI).toFixed(2);
+}
+
+
+function calculateCI() {
+
+    const P = Number(document.getElementById("ciPrincipal").value);
+    const R = Number(document.getElementById("ciRate").value);
+    const T = Number(document.getElementById("ciTime").value);
+
+    const amount =
+        P*Math.pow(1+R/100,T);
+
+    document.getElementById("ciResult").innerText =
+        "Compound Interest = ₹" +
+        (amount-P).toFixed(2) +
+        " | Amount = ₹" +
+        amount.toFixed(2);
+}
+
+
+function calculateLoan() {
+
+    const P = Number(document.getElementById("loanAmount2").value);
+    const R = Number(document.getElementById("loanRate2").value);
+    const T = Number(document.getElementById("loanYears2").value);
+
+    const r = R/12/100;
+    const n = T*12;
+
+    const emi =
+        P*r*Math.pow(1+r,n) /
+        (Math.pow(1+r,n)-1);
+
+    document.getElementById("loanResult").innerText =
+        "Estimated EMI = ₹" + emi.toFixed(2);
+}
+
+
+function calculateSalary() {
+
+    const monthly =
+        Number(document.getElementById("monthlySalary").value);
+
+    document.getElementById("salaryResult").innerText =
+        "Yearly salary = ₹" + (monthly*12).toFixed(2);
+}
+
+
+function calculateReturn() {
+
+    const investment =
+        Number(document.getElementById("investment").value);
+
+    const rate =
+        Number(document.getElementById("returnRate").value);
+
+    const profit =
+        investment*rate/100;
+
+    document.getElementById("returnResult").innerText =
+        "Return = ₹" + profit.toFixed(2) +
+        " | Total = ₹" + (investment+profit).toFixed(2);
+}
+
+
+function calculateSavings() {
+
+    const monthly =
+        Number(document.getElementById("monthlySaving").value);
+
+    const months =
+        Number(document.getElementById("savingMonths").value);
+
+    document.getElementById("savingResult").innerText =
+        "Total savings = ₹" + (monthly*months).toFixed(2);
+}
+
+
+function convertCurrency() {
+
+    const rupees =
+        Number(document.getElementById("rupees").value);
+
+    const usd =
+        rupees / 83;
+
+    document.getElementById("currencyResult").innerText =
+        "≈ $" + usd.toFixed(2);
+}
+
+
+function dateDifference() {
+
+    const a = new Date(document.getElementById("date1").value);
+    const b = new Date(document.getElementById("date2").value);
+
+    const days =
+        Math.abs(b-a)/(1000*60*60*24);
+
+    document.getElementById("dateResult").innerText =
+        days + " days";
+}
+
+
+function daysBetween() {
+
+    const a = new Date(document.getElementById("daysDate1").value);
+    const b = new Date(document.getElementById("daysDate2").value);
+
+    const days =
+        Math.abs(b-a)/(1000*60*60*24);
+
+    document.getElementById("daysResult").innerText =
+        days + " days";
+}
+
+
+function countdown() {
+
+    const target =
+        new Date(document.getElementById("countdownDate").value);
+
+    const now = new Date();
+
+    const days =
+        Math.ceil((target-now)/(1000*60*60*24));
+
+    document.getElementById("countdownResult").innerText =
+        days + " days remaining";
+}
+
+
+function timeDuration() {
+
+    const start =
+        document.getElementById("timeStart").value;
+
+    const end =
+        document.getElementById("timeEnd").value;
+
+    if (!start || !end) {
+        document.getElementById("timeResult").innerText =
+            "Enter both times.";
+        return;
+    }
+
+    const s =
+        new Date("1970-01-01T"+start);
+
+    const e =
+        new Date("1970-01-01T"+end);
+
+    let diff = (e-s)/(1000*60);
+
+    if (diff < 0) diff += 1440;
+
+    const h = Math.floor(diff/60);
+    const m = diff%60;
+
+    document.getElementById("timeResult").innerText =
+        h + " hours " + m + " minutes";
+}
+
+
+function addDays() {
+
+    const date =
+        new Date(document.getElementById("addDate").value);
+
+    const days =
+        Number(document.getElementById("numberOfDays").value);
+
+    date.setDate(date.getDate()+days);
+
+    document.getElementById("addDaysResult").innerText =
+        date.toLocaleDateString();
+}
+
+
+function weekNumber() {
+
+    const date =
+        new Date(document.getElementById("weekDate").value);
+
+    const start =
+        new Date(date.getFullYear(),0,1);
+
+    const week =
+        Math.ceil((((date-start)/86400000)+start.getDay()+1)/7);
+
+    document.getElementById("weekResult").innerText =
+        "Week " + week;
+}
+
+
+function convertLength() {
+
+    const km = Number(document.getElementById("km").value);
+
+    document.getElementById("lengthResult").innerText =
+        km + " km = " + (km*1000) + " metres";
+}
+
+
+function convertWeight() {
+
+    const kg = Number(document.getElementById("kg").value);
+
+    document.getElementById("weightResult").innerText =
+        kg + " kg = " + (kg*1000) + " grams";
+}
+
+
+function convertTemperature() {
+
+    const c = Number(document.getElementById("celsius").value);
+
+    document.getElementById("temperatureResult").innerText =
+        c + "°C = " + ((c*9/5)+32).toFixed(2) + "°F";
+}
+
+
+function convertSpeed() {
+
+    const kmh = Number(document.getElementById("kmh").value);
+
+    document.getElementById("speedResult").innerText =
+        kmh + " km/h = " + (kmh/1.60934).toFixed(2) + " mph";
+}
+
+
+function convertArea() {
+
+    const m = Number(document.getElementById("squareMeter").value);
+
+    document.getElementById("areaResult").innerText =
+        m + " m² = " + (m*10.7639).toFixed(2) + " ft²";
+}
+
+
+function convertVolume() {
+
+    const l = Number(document.getElementById("litres").value);
+
+    document.getElementById("volumeResult").innerText =
+        l + " litres = " + (l*1000) + " ml";
+}
+
+
+function convertData() {
+
+    const gb = Number(document.getElementById("gb").value);
+
+    document.getElementById("dataResult").innerText =
+        gb + " GB = " + (gb*1024) + " MB";
+}
+
+
+function convertTime() {
+
+    const hours = Number(document.getElementById("hours").value);
+
+    document.getElementById("timeConvertResult").innerText =
+        hours + " hours = " + (hours*60) + " minutes";
+}
+
+
+function countWords() {
+
+    const text =
+        document.getElementById("wordText").value.trim();
+
+    const count =
+        text ? text.split(/\s+/).length : 0;
+
+    document.getElementById("wordResult").innerText =
+        "Words = " + count;
+}
+
+
+function countCharacters() {
+
+    const text =
+        document.getElementById("characterText").value;
+
+    document.getElementById("characterResult").innerText =
+        "Characters = " + text.length;
+}
+
+
+function countSentences() {
+
+    const text =
+        document.getElementById("sentenceText").value.trim();
+
+    const count =
+        text ? text.split(/[.!?]+/).filter(x => x.trim()).length : 0;
+
+    document.getElementById("sentenceResult").innerText =
+        "Sentences = " + count;
+}
+
+
+function toUpper() {
+
+    document.getElementById("caseResult").innerText =
+        document.getElementById("caseText").value.toUpperCase();
+}
+
+
+function toLower() {
+
+    document.getElementById("caseResult").innerText =
+        document.getElementById("caseText").value.toLowerCase();
+}
+
+
+function readingTime() {
+
+    const text =
+        document.getElementById("readingText").value.trim();
+
+    const words =
+        text ? text.split(/\s+/).length : 0;
+
+    const minutes =
+        Math.max(1,Math.ceil(words/200));
+
+    document.getElementById("readingResult").innerText =
+        "Reading time ≈ " + minutes + " minute(s)";
+}
+
+
+function countNumbers() {
+
+    const text =
+        document.getElementById("numberText").value;
+
+    const numbers =
+        text.match(/\d+/g);
+
+    document.getElementById("numberResult").innerText =
+        "Numbers found = " +
+        (numbers ? numbers.length : 0);
+}
+
+
+function generatePassword() {
+
+    const chars =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
+
+    let password = "";
+
+    for(let i=0;i<16;i++) {
+        password += chars[Math.floor(Math.random()*chars.length)];
+    }
+
+    document.getElementById("passwordResult").innerText =
+        password;
+}
+
+
+function simpleRandom() {
+
+    document.getElementById("simpleRandomResult").innerText =
+        Math.floor(Math.random()*100)+1;
+}
+
+
+function calculateBMI() {
+
+    const h = Number(document.getElementById("height").value);
+    const w = Number(document.getElementById("weight").value);
+
+    if(h <= 0 || w <= 0) {
+        document.getElementById("bmiResult").innerText =
+            "Enter valid values.";
+        return;
+    }
+
+    const bmi = w/(h*h);
+
+    document.getElementById("bmiResult").innerText =
+        "BMI estimate = " + bmi.toFixed(1);
+}
+
+
+function calculateCalories() {
+
+    const weight =
+        Number(document.getElementById("calorieWeight").value);
+
+    document.getElementById("calorieResult").innerText =
+        "Rough estimate: " +
+        (weight*30) +
+        " calories/day. Individual needs vary.";
+}
+
+
+function calculatePace() {
+
+    const distance =
+        Number(document.getElementById("distance").value);
+
+    const minutes =
+        Number(document.getElementById("minutes").value);
+
+    if(distance <= 0) {
+        document.getElementById("paceResult").innerText =
+            "Enter a valid distance.";
+        return;
+    }
+
+    document.getElementById("paceResult").innerText =
+        "Pace = " + (minutes/distance).toFixed(2) +
+        " min/km";
+}
+
+
+function calculateWater() {
+
+    const weight =
+        Number(document.getElementById("waterWeight").value);
+
+    document.getElementById("waterResult").innerText =
+        "A rough estimate is " +
+        (weight*0.033).toFixed(2) +
+        " litres/day. Needs vary by person and activity.";
+}
+
+
+function calculateBodyFat() {
+
+    document.getElementById("bodyFatResult").innerText =
+        "This calculator will be upgraded with a proper validated formula.";
+}
+
+</script>
+
+</body>
+</html>
