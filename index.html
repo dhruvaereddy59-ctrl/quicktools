@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,6 +55,13 @@
             margin-top: 0;
         }
 
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin: 8px;
+        }
+
         button {
             background: #111;
             color: white;
@@ -65,6 +73,11 @@
 
         button:hover {
             background: #333;
+        }
+
+        .result {
+            margin-top: 15px;
+            font-weight: bold;
         }
 
         footer {
@@ -88,36 +101,75 @@
 
     <div class="tools">
 
+        <!-- AGE CALCULATOR -->
         <div class="tool">
             <h2>Age Calculator</h2>
-            <p>Calculate your age instantly.</p>
-            <button onclick="alert('Age Calculator coming soon!')">
-                Open Tool
+            <p>Enter your date of birth:</p>
+
+            <input type="date" id="birthDate">
+
+            <br>
+
+            <button onclick="calculateAge()">
+                Calculate Age
             </button>
+
+            <div class="result" id="ageResult"></div>
         </div>
 
+
+        <!-- PERCENTAGE CALCULATOR -->
         <div class="tool">
             <h2>Percentage Calculator</h2>
-            <p>Calculate percentages quickly.</p>
-            <button onclick="alert('Percentage Calculator coming soon!')">
-                Open Tool
+            <p>What is X% of Y?</p>
+
+            <input type="number" id="percent" placeholder="Percentage">
+            <input type="number" id="number" placeholder="Number">
+
+            <br>
+
+            <button onclick="calculatePercentage()">
+                Calculate
             </button>
+
+            <div class="result" id="percentageResult"></div>
         </div>
 
+
+        <!-- WORD COUNTER -->
         <div class="tool">
             <h2>Word Counter</h2>
-            <p>Count words and characters.</p>
-            <button onclick="alert('Word Counter coming soon!')">
-                Open Tool
+            <p>Enter your text:</p>
+
+            <textarea id="textInput"
+                rows="5"
+                style="width:90%; padding:10px; border-radius:6px; border:1px solid #ccc;"
+                placeholder="Type or paste your text here..."></textarea>
+
+            <br><br>
+
+            <button onclick="countWords()">
+                Count
             </button>
+
+            <div class="result" id="wordResult"></div>
         </div>
 
+
+        <!-- UNIT CONVERTER -->
         <div class="tool">
             <h2>Unit Converter</h2>
-            <p>Convert common measurements.</p>
-            <button onclick="alert('Unit Converter coming soon!')">
-                Open Tool
+            <p>Convert kilometres to miles:</p>
+
+            <input type="number" id="kilometres" placeholder="Kilometres">
+
+            <br>
+
+            <button onclick="convertUnit()">
+                Convert
             </button>
+
+            <div class="result" id="unitResult"></div>
         </div>
 
     </div>
@@ -128,5 +180,106 @@
     © 2026 QuickTools
 </footer>
 
+
+<script>
+
+    // AGE CALCULATOR
+    function calculateAge() {
+
+        const birthDate = new Date(
+            document.getElementById("birthDate").value
+        );
+
+        if (!document.getElementById("birthDate").value) {
+            document.getElementById("ageResult").innerText =
+                "Please enter your birth date.";
+            return;
+        }
+
+        const today = new Date();
+
+        let age = today.getFullYear() - birthDate.getFullYear();
+
+        const monthDifference =
+            today.getMonth() - birthDate.getMonth();
+
+        if (
+            monthDifference < 0 ||
+            (monthDifference === 0 &&
+             today.getDate() < birthDate.getDate())
+        ) {
+            age--;
+        }
+
+        document.getElementById("ageResult").innerText =
+            "Your age is " + age + " years.";
+    }
+
+
+    // PERCENTAGE CALCULATOR
+    function calculatePercentage() {
+
+        const percent =
+            Number(document.getElementById("percent").value);
+
+        const number =
+            Number(document.getElementById("number").value);
+
+        if (!percent || !number) {
+            document.getElementById("percentageResult").innerText =
+                "Please enter both values.";
+            return;
+        }
+
+        const result = (percent / 100) * number;
+
+        document.getElementById("percentageResult").innerText =
+            percent + "% of " + number + " = " + result;
+    }
+
+
+    // WORD COUNTER
+    function countWords() {
+
+        const text =
+            document.getElementById("textInput").value.trim();
+
+        if (!text) {
+            document.getElementById("wordResult").innerText =
+                "Words: 0 | Characters: 0";
+            return;
+        }
+
+        const words = text.split(/\s+/).length;
+        const characters = text.length;
+
+        document.getElementById("wordResult").innerText =
+            "Words: " + words +
+            " | Characters: " + characters;
+    }
+
+
+    // UNIT CONVERTER
+    function convertUnit() {
+
+        const kilometres =
+            Number(document.getElementById("kilometres").value);
+
+        if (!kilometres) {
+            document.getElementById("unitResult").innerText =
+                "Please enter a value.";
+            return;
+        }
+
+        const miles = kilometres * 0.621371;
+
+        document.getElementById("unitResult").innerText =
+            kilometres + " km = " +
+            miles.toFixed(2) + " miles";
+    }
+
+</script>
+
 </body>
 </html>
+```
