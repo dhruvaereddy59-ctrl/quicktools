@@ -1,285 +1,771 @@
-```html
+```html id="m8q2az"
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickTools - Free Online Tools</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f5f5;
-            color: #222;
-        }
+<meta charset="UTF-8">
 
-        header {
-            background: #111;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-        header h1 {
-            margin: 0;
-            font-size: 40px;
-        }
+<title>QuickTools - 45 Free Online Tools</title>
 
-        header p {
-            font-size: 18px;
-            color: #ccc;
-        }
+<meta name="description"
+content="Free online calculators, converters, text tools and everyday utilities.">
 
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 20px;
-        }
+<style>
 
-        .tools {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        .tool {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        .tool h2 {
-            margin-top: 0;
-        }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
 
-        input {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            margin: 8px;
-        }
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
 
-        button {
-            background: #111;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 8px;
-            cursor: pointer;
-        }
+header h1 {
+    margin: 0;
+    font-size: 44px;
+}
 
-        button:hover {
-            background: #333;
-        }
+header p {
+    color: #ccc;
+    font-size: 18px;
+}
 
-        .result {
-            margin-top: 15px;
-            font-weight: bold;
-        }
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px 20px;
+}
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #777;
-        }
-    </style>
+.menu {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.07);
+}
+
+.menu h2 {
+    margin-top: 0;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: #111;
+    background: #eee;
+    padding: 10px 14px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    background: #ddd;
+}
+
+.category {
+    margin-top: 40px;
+}
+
+.category h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.tools {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tool {
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.07);
+}
+
+.tool-number {
+    font-size: 13px;
+    color: #777;
+    font-weight: bold;
+}
+
+.tool h3 {
+    margin-bottom: 8px;
+}
+
+.tool input,
+.tool select,
+.tool textarea {
+    width: 100%;
+    padding: 11px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.tool button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #111;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.tool button:hover {
+    background: #333;
+}
+
+.result {
+    margin-top: 15px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.coming {
+    color: #777;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #777;
+}
+
+@media(max-width:600px) {
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .tools {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
 </head>
+
 
 <body>
 
+
 <header>
-    <h1>QuickTools</h1>
-    <p>Free online tools for everyday tasks</p>
+
+<h1>QuickTools</h1>
+
+<p>45 Free Online Tools for Everyday Tasks</p>
+
 </header>
+
 
 <div class="container">
 
-    <h2>Our Free Tools</h2>
 
-    <div class="tools">
+<!-- MENU -->
 
-        <!-- AGE CALCULATOR -->
-        <div class="tool">
-            <h2>Age Calculator</h2>
-            <p>Enter your date of birth:</p>
+<div class="menu">
 
-            <input type="date" id="birthDate">
+<h2>📋 All Tools</h2>
 
-            <br>
+<a href="#math">🧮 Math & Numbers</a>
 
-            <button onclick="calculateAge()">
-                Calculate Age
-            </button>
+<a href="#finance">💰 Finance</a>
 
-            <div class="result" id="ageResult"></div>
-        </div>
+<a href="#date">📅 Date & Time</a>
 
+<a href="#convert">📏 Converters</a>
 
-        <!-- PERCENTAGE CALCULATOR -->
-        <div class="tool">
-            <h2>Percentage Calculator</h2>
-            <p>What is X% of Y?</p>
+<a href="#text">📝 Text & Productivity</a>
 
-            <input type="number" id="percent" placeholder="Percentage">
-            <input type="number" id="number" placeholder="Number">
-
-            <br>
-
-            <button onclick="calculatePercentage()">
-                Calculate
-            </button>
-
-            <div class="result" id="percentageResult"></div>
-        </div>
-
-
-        <!-- WORD COUNTER -->
-        <div class="tool">
-            <h2>Word Counter</h2>
-            <p>Enter your text:</p>
-
-            <textarea id="textInput"
-                rows="5"
-                style="width:90%; padding:10px; border-radius:6px; border:1px solid #ccc;"
-                placeholder="Type or paste your text here..."></textarea>
-
-            <br><br>
-
-            <button onclick="countWords()">
-                Count
-            </button>
-
-            <div class="result" id="wordResult"></div>
-        </div>
-
-
-        <!-- UNIT CONVERTER -->
-        <div class="tool">
-            <h2>Unit Converter</h2>
-            <p>Convert kilometres to miles:</p>
-
-            <input type="number" id="kilometres" placeholder="Kilometres">
-
-            <br>
-
-            <button onclick="convertUnit()">
-                Convert
-            </button>
-
-            <div class="result" id="unitResult"></div>
-        </div>
-
-    </div>
+<a href="#everyday">❤️ Everyday</a>
 
 </div>
 
+
+<!-- ================= MATH ================= -->
+
+<section class="category" id="math">
+
+<h2>🧮 Math & Numbers</h2>
+
+<div class="tools">
+
+
+<div class="tool" id="tool1">
+
+<div class="tool-number">#1</div>
+
+<h3>Age Calculator</h3>
+
+<p>Calculate your age from your date of birth.</p>
+
+<input type="date" id="birthDate">
+
+<button onclick="calculateAge()">
+Calculate Age
+</button>
+
+<div class="result" id="ageResult"></div>
+
+</div>
+
+
+<div class="tool">
+
+<div class="tool-number">#2</div>
+
+<h3>Percentage Calculator</h3>
+
+<input type="number" id="percent"
+placeholder="Percentage">
+
+<input type="number" id="percentNumber"
+placeholder="Number">
+
+<button onclick="percentage()">
+Calculate
+</button>
+
+<div class="result" id="percentageResult"></div>
+
+</div>
+
+
+<div class="tool">
+
+<div class="tool-number">#3</div>
+
+<h3>Average Calculator</h3>
+
+<input type="text" id="averageNumbers"
+placeholder="Example: 10, 20, 30">
+
+<button onclick="average()">
+Calculate Average
+</button>
+
+<div class="result" id="averageResult"></div>
+
+</div>
+
+
+<div class="tool">
+
+<div class="tool-number">#4</div>
+
+<h3>Ratio Calculator</h3>
+
+<input type="number" id="ratioA"
+placeholder="First number">
+
+<input type="number" id="ratioB"
+placeholder="Second number">
+
+<button onclick="ratio()">
+Calculate Ratio
+</button>
+
+<div class="result" id="ratioResult"></div>
+
+</div>
+
+
+<div class="tool">
+
+<div class="tool-number">#5</div>
+
+<h3>Fraction Calculator</h3>
+
+<input type="number" id="f1"
+placeholder="Numerator 1">
+
+<input type="number" id="f2"
+placeholder="Denominator 1">
+
+<input type="number" id="f3"
+placeholder="Numerator 2">
+
+<input type="number" id="f4"
+placeholder="Denominator 2">
+
+<button onclick="fraction()">
+Add Fractions
+</button>
+
+<div class="result" id="fractionResult"></div>
+
+</div>
+
+
+<div class="tool">
+
+<div class="tool-number">#6</div>
+
+<h3>Discount Calculator</h3>
+
+<input type="number" id="price"
+placeholder="Original price">
+
+<input type="number" id="discount"
+placeholder="Discount %">
+
+<button onclick="discountCalc()">
+Calculate
+</button>
+
+<div class="result" id="discountResult"></div>
+
+</div>
+
+
+<div class="tool">
+
+<div class="tool-number">#7</div>
+
+<h3>Profit & Loss</h3>
+
+<input type="number" id="cost"
+placeholder="Cost price">
+
+<input type="number" id="selling"
+placeholder="Selling price">
+
+<button onclick="profitLoss()">
+Calculate
+</button>
+
+<div class="result" id="profitResult"></div>
+
+</div>
+
+
+<div class="tool">
+
+<div class="tool-number">#8</div>
+
+<h3>GST Calculator</h3>
+
+<input type="number" id="gstAmount"
+placeholder="Amount ₹">
+
+<select id="gstRate">
+
+<option value="5">5% GST</option>
+
+<option value="12">12% GST</option>
+
+<option value="18" selected>18% GST</option>
+
+<option value="28">28% GST</option>
+
+</select>
+
+<button onclick="gst()">
+Calculate GST
+</button>
+
+<div class="result" id="gstResult"></div>
+
+</div>
+
+
+<div class="tool">
+
+<div class="tool-number">#9</div>
+
+<h3>Tip Calculator</h3>
+
+<input type="number" id="bill"
+placeholder="Bill amount">
+
+<input type="number" id="tip"
+placeholder="Tip %">
+
+<button onclick="tipCalc()">
+Calculate
+</button>
+
+<div class="result" id="tipResult"></div>
+
+</div>
+
+
+<div class="tool">
+
+<div class="tool-number">#10</div>
+
+<h3>Number Generator</h3>
+
+<input type="number" id="minNumber"
+placeholder="Minimum">
+
+<input type="number" id="maxNumber"
+placeholder="Maximum">
+
+<button onclick="randomNumber()">
+Generate
+</button>
+
+<div class="result" id="randomResult"></div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= FINANCE ================= -->
+
+<section class="category" id="finance">
+
+<h2>💰 Finance</h2>
+
+<div class="tools">
+
+<div class="tool"><div class="tool-number">#11</div><h3>EMI Calculator</h3><p>Calculate monthly loan payments.</p><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#12</div><h3>Simple Interest</h3><p>Calculate simple interest.</p><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#13</div><h3>Compound Interest</h3><p>Calculate compound interest.</p><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#14</div><h3>Loan Calculator</h3><p>Estimate loan payments.</p><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#15</div><h3>Salary Calculator</h3><p>Calculate salary amounts.</p><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#16</div><h3>Investment Return</h3><p>Estimate investment returns.</p><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#17</div><h3>Savings Calculator</h3><p>Plan your savings.</p><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#18</div><h3>Currency Converter</h3><p>Convert between currencies.</p><span class="coming">Coming next</span></div>
+
+</div>
+
+</section>
+
+
+<!-- ================= DATE ================= -->
+
+<section class="category" id="date">
+
+<h2>📅 Date & Time</h2>
+
+<div class="tools">
+
+<div class="tool"><div class="tool-number">#19</div><h3>Date Difference</h3><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#20</div><h3>Days Between Dates</h3><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#21</div><h3>Countdown Calculator</h3><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#22</div><h3>Time Duration</h3><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#23</div><h3>Add / Subtract Days</h3><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#24</div><h3>Week Number</h3><span class="coming">Coming next</span></div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONVERTERS ================= -->
+
+<section class="category" id="convert">
+
+<h2>📏 Converters</h2>
+
+<div class="tools">
+
+<div class="tool"><div class="tool-number">#25</div><h3>Length Converter</h3><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#26</div><h3>Weight Converter</h3><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#27</div><h3>Temperature Converter</h3><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#28</div><h3>Speed Converter</h3><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#29</div><h3>Area Converter</h3><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#30</div><h3>Volume Converter</h3><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#31</div><h3>Data Storage Converter</h3><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#32</div><h3>Time Converter</h3><span class="coming">Coming next</span></div>
+
+</div>
+
+</section>
+
+
+<!-- ================= TEXT ================= -->
+
+<section class="category" id="text">
+
+<h2>📝 Text & Productivity</h2>
+
+<div class="tools">
+
+<div class="tool"><div class="tool-number">#33</div><h3>Word Counter</h3><textarea id="wordText" rows="4" placeholder="Type or paste text"></textarea><button onclick="wordCounter()">Count</button><div class="result" id="wordResult"></div></div>
+
+<div class="tool"><div class="tool-number">#34</div><h3>Character Counter</h3><textarea id="characterText" rows="4" placeholder="Type or paste text"></textarea><button onclick="characterCounter()">Count</button><div class="result" id="characterResult"></div></div>
+
+<div class="tool"><div class="tool-number">#35</div><h3>Sentence Counter</h3><textarea id="sentenceText" rows="4" placeholder="Type or paste text"></textarea><button onclick="sentenceCounter()">Count</button><div class="result" id="sentenceResult"></div></div>
+
+<div class="tool"><div class="tool-number">#36</div><h3>Case Converter</h3><textarea id="caseText" rows="4" placeholder="Type text"></textarea><button onclick="upperCase()">UPPERCASE</button><button onclick="lowerCase()">lowercase</button><div class="result" id="caseResult"></div></div>
+
+<div class="tool"><div class="tool-number">#37</div><h3>Reading Time</h3><textarea id="readingText" rows="4" placeholder="Paste your text"></textarea><button onclick="readingTime()">Calculate</button><div class="result" id="readingResult"></div></div>
+
+<div class="tool"><div class="tool-number">#38</div><h3>Text-to-Number Counter</h3><textarea id="textNumber" rows="4" placeholder="Type or paste text"></textarea><button onclick="textNumberCounter()">Count</button><div class="result" id="textNumberResult"></div></div>
+
+<div class="tool"><div class="tool-number">#39</div><h3>Password Generator</h3><button onclick="passwordGenerator()">Generate Password</button><div class="result" id="passwordResult"></div></div>
+
+<div class="tool"><div class="tool-number">#40</div><h3>Random Number Generator</h3><button onclick="randomSimple()">Generate</button><div class="result" id="randomSimpleResult"></div></div>
+
+</div>
+
+</section>
+
+
+<!-- ================= EVERYDAY ================= -->
+
+<section class="category" id="everyday">
+
+<h2>❤️ Everyday Tools</h2>
+
+<div class="tools">
+
+<div class="tool"><div class="tool-number">#41</div><h3>BMI Calculator</h3><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#42</div><h3>Calorie Calculator</h3><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#43</div><h3>Pace Calculator</h3><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#44</div><h3>Water Intake Calculator</h3><span class="coming">Coming next</span></div>
+
+<div class="tool"><div class="tool-number">#45</div><h3>Body Fat Calculator</h3><span class="coming">Coming next</span></div>
+
+</div>
+
+</section>
+
+
+</div>
+
+
 <footer>
-    © 2026 QuickTools
+
+© 2026 QuickTools
+
 </footer>
 
 
 <script>
 
-    // AGE CALCULATOR
-    function calculateAge() {
 
-        const birthDate = new Date(
-            document.getElementById("birthDate").value
-        );
+function calculateAge() {
 
-        if (!document.getElementById("birthDate").value) {
-            document.getElementById("ageResult").innerText =
-                "Please enter your birth date.";
-            return;
-        }
+    const value =
+        document.getElementById("birthDate").value;
 
-        const today = new Date();
-
-        let age = today.getFullYear() - birthDate.getFullYear();
-
-        const monthDifference =
-            today.getMonth() - birthDate.getMonth();
-
-        if (
-            monthDifference < 0 ||
-            (monthDifference === 0 &&
-             today.getDate() < birthDate.getDate())
-        ) {
-            age--;
-        }
+    if (!value) {
 
         document.getElementById("ageResult").innerText =
-            "Your age is " + age + " years.";
+            "Please enter your birth date.";
+
+        return;
     }
 
+    const birth =
+        new Date(value + "T00:00:00");
 
-    // PERCENTAGE CALCULATOR
-    function calculatePercentage() {
+    const today = new Date();
 
-        const percent =
-            Number(document.getElementById("percent").value);
+    let age =
+        today.getFullYear() -
+        birth.getFullYear();
 
-        const number =
-            Number(document.getElementById("number").value);
+    if (
+        today.getMonth() < birth.getMonth() ||
+        (
+            today.getMonth() === birth.getMonth() &&
+            today.getDate() < birth.getDate()
+        )
+    ) {
+        age--;
+    }
 
-        if (!percent || !number) {
-            document.getElementById("percentageResult").innerText =
-                "Please enter both values.";
-            return;
-        }
+    document.getElementById("ageResult").innerText =
+        "Your age is " + age + " years.";
+}
 
-        const result = (percent / 100) * number;
+
+function percentage() {
+
+    const p =
+        Number(document.getElementById("percent").value);
+
+    const n =
+        Number(document.getElementById("percentNumber").value);
+
+    if (!Number.isFinite(p) || !Number.isFinite(n)) {
 
         document.getElementById("percentageResult").innerText =
-            percent + "% of " + number + " = " + result;
+            "Enter both values.";
+
+        return;
     }
 
+    document.getElementById("percentageResult").innerText =
+        p + "% of " + n + " = " + ((p / 100) * n);
+}
 
-    // WORD COUNTER
-    function countWords() {
 
-        const text =
-            document.getElementById("textInput").value.trim();
+function average() {
 
-        if (!text) {
-            document.getElementById("wordResult").innerText =
-                "Words: 0 | Characters: 0";
-            return;
-        }
+    const values =
+        document.getElementById("averageNumbers")
+        .value
+        .split(",")
+        .map(Number)
+        .filter(Number.isFinite);
 
-        const words = text.split(/\s+/).length;
-        const characters = text.length;
+    if (values.length === 0) {
 
-        document.getElementById("wordResult").innerText =
-            "Words: " + words +
-            " | Characters: " + characters;
+        document.getElementById("averageResult").innerText =
+            "Enter numbers separated by commas.";
+
+        return;
     }
 
+    const total =
+        values.reduce((a,b) => a + b, 0);
 
-    // UNIT CONVERTER
-    function convertUnit() {
+    document.getElementById("averageResult").innerText =
+        "Average = " + (total / values.length);
+}
 
-        const kilometres =
-            Number(document.getElementById("kilometres").value);
 
-        if (!kilometres) {
-            document.getElementById("unitResult").innerText =
-                "Please enter a value.";
-            return;
-        }
+function ratio() {
 
-        const miles = kilometres * 0.621371;
+    const a =
+        Number(document.getElementById("ratioA").value);
 
-        document.getElementById("unitResult").innerText =
-            kilometres + " km = " +
-            miles.toFixed(2) + " miles";
+    const b =
+        Number(document.getElementById("ratioB").value);
+
+    if (!Number.isFinite(a) || !Number.isFinite(b) || b === 0) {
+
+        document.getElementById("ratioResult").innerText =
+            "Enter valid numbers.";
+
+        return;
     }
 
-</script>
+    document.getElementById("ratioResult").innerText =
+        "Ratio = " + a + " : " + b;
+}
 
-</body>
-</html>
+
+function fraction() {
+
+    const a = Number(document.getElementById("f1").value);
+    const b = Number(document.getElementById("f2").value);
+    const c = Number(document.getElementById("f3").value);
+    const d = Number(document.getElementById("f4").value);
+
+    if (b === 0 || d === 0) {
+
+        document.getElementById("fractionResult").innerText =
+            "Denominators cannot be zero.";
+
+        return;
+    }
+
+    const numerator =
+        a * d + c * b;
+
+    const denominator =
+        b * d;
+
+    document.getElementById("fractionResult").innerText =
+        "Result = " + numerator + "/" + denominator;
+}
+
+
+function discountCalc() {
+
+    const price =
+        Number(document.getElementById("price").value);
+
+    const discount =
+        Number(document.getElementById("discount").value);
+
+    if (price < 0 || discount < 0) {
+
+        document.getElementById("discountResult").innerText =
+            "Enter valid values.";
+
+        return;
+    }
+
+    const saved =
+        price * discount / 100;
+
+    const finalPrice =
+        price - saved;
+
+    document.getElementById("discountResult").innerText =
+        "You save ₹" +
+        saved.toFixed(2) +
+        " | Final price ₹" +
+        finalPrice.toFixed(2);
+}
+
+
+function profitLoss() {
+
+    const cost =
+        Number(document.getElementById("cost").value);
+
+    const selling =
+        Number(document.getElementById("selling").value);
+
+    if (cost <= 0 || selling < 0) {
+
+        document.getElementById("profitResult").inner
 ```
